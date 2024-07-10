@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher View Score</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-4">Teacher View Score</h2>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Student Username</th>
+                        <th>Student ID</th>
+                        <th>Test ID</th>
+                        <th>Test Name</th>
+                        <th>Question ID</th>
+                        <th>Question Text</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for student_score in student_scores %}
+                    <tr>
+                        <td>{{ student_score.student_username }}</td>
+                        <td>{{ student_score.student_id }}</td>
+                        <td>{{ student_score.test_id }}</td>
+                        <td>{{ student_score.test_name }}</td>
+                        <td>{{ student_score.question_id }}</td>
+                        <td>{{ student_score.question_text }}</td>
+                        <td>{{ student_score.score }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Bootstrap JS (optional, for components that require JavaScript) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
