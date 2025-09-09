@@ -6,6 +6,6 @@
  Developed an automated system for three main users—Student, Teacher, and Admin—that significantly reduced manual
  effort and optimized the grading of subjective answers.
 
-Front_End - HTML,CSS,Jupyter_Notebook.
+Front_End - HTML, CSS, Jupyter_Notebook .
 
-Back_End - Python,Js.
+Back_End - Python, Js .
