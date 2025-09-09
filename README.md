@@ -5,3 +5,6 @@
  in manual review effort by an estimated 30 hours per month for educators.
  Developed an automated system for three main users—Student, Teacher, and Admin—that significantly reduced manual
  effort and optimized the grading of subjective answers.
+
+Front_End - HTML,CSS,jupyter notebook
+Back_End - Python,Js.
